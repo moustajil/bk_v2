@@ -1,7 +1,5 @@
 :root {
-  /* =========================
-     COLORS
-  ========================== */
+
 
   --color-primary: #15803d;
   --color-primary-light: #22c55e;
@@ -29,9 +27,6 @@
   --gradient-top: rgba(34, 197, 94, 0.14);
   --gradient-bottom: rgba(134, 239, 172, 0.18);
 
-  /* =========================
-     TYPOGRAPHY
-  ========================== */
 
   --font-main: Inter, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
@@ -56,9 +51,6 @@
   --fw-bold: 700;
   --fw-extrabold: 800;
 
-  /* =========================
-     SPACING
-  ========================== */
 
   --space-xs: 8px;
   --space-sm: 16px;
@@ -68,52 +60,30 @@
   --space-2xl: 80px;
   --space-3xl: 100px;
 
-  /* =========================
-     RADIUS
-  ========================== */
-
   --radius-sm: 12px;
   --radius-md: 18px;
   --radius-lg: 16px;
   --radius-xl: 24px;
   --radius-full: 999px;
 
-  /* =========================
-     SHADOWS
-  ========================== */
-
   --shadow-card: 0 12px 30px rgba(21, 128, 61, 0.12);
   --shadow-button: 0 8px 20px rgba(21, 128, 61, 0.18);
   --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
-
-  /* =========================
-     TRANSITIONS
-  ========================== */
 
   --transition-fast: 180ms ease;
   --transition-normal: 0.35s ease;
   --transition-slow: 0.5s ease;
 
-  /* =========================
-     CONTAINER
-  ========================== */
 
   --container-width: 1200px;
 }
 
-/* =========================
-   RESET
-========================== */
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-/* =========================
-   BODY
-========================== */
 
 body {
   min-height: 100vh;
@@ -131,9 +101,6 @@ body {
   color: var(--color-text-primary);
 }
 
-/* =========================
-   LAYOUT
-========================== */
 
 .page-wrapper {
   width: min(var(--container-width), 100%);
@@ -141,9 +108,6 @@ body {
   padding: 28px 24px 40px;
 }
 
-/* =========================
-   HEADER
-========================== */
 
 .site-header {
   display: flex;
@@ -164,10 +128,6 @@ body {
 
   letter-spacing: 0.14em;
 }
-
-/* =========================
-   NAVIGATION
-========================== */
 
 .navigation {
   display: flex;
@@ -192,9 +152,6 @@ body {
   color: var(--color-primary);
 }
 
-/* =========================
-   BUTTONS
-========================== */
 
 .button {
   display: inline-flex;
@@ -243,9 +200,6 @@ body {
   background: var(--color-white);
 }
 
-/* =========================
-   HERO SECTION
-========================== */
 
 .hero {
   display: grid;
@@ -303,10 +257,6 @@ body {
   max-width: 520px;
   object-fit: cover;
 }
-
-/* =========================
-   FEATURES SECTION
-========================== */
 
 .features {
   padding: var(--space-3xl) 8%;
@@ -407,9 +357,7 @@ body {
   line-height: 1.8;
 }
 
-/* =========================
-   OPERATIONS SECTION
-========================== */
+
 
 .operations {
   padding: var(--space-3xl) 8%;
@@ -437,9 +385,6 @@ body {
   text-align: start;
 }
 
-/* =========================
-   OPERATION CARD
-========================== */
 
 .operation-content {
   position: relative;
@@ -455,9 +400,6 @@ body {
   box-shadow: var(--shadow-md);
 }
 
-/* =========================
-   OPERATION TABS
-========================== */
 
 .content-title {
   position: absolute;
@@ -502,9 +444,7 @@ body {
   background: var(--color-danger);
 }
 
-/* =========================
-   OPERATION DESCRIPTION
-========================== */
+
 
 .content-desc h2 {
   margin-bottom: 20px;
@@ -525,9 +465,7 @@ body {
 }
 
 
-/* =========================
-   Testimonials
-========================== */
+
 .Testimonials {
   padding: var(--space-3xl) 8%;
 }
@@ -556,9 +494,7 @@ body {
 }
 
 
-/* =========================
-   TESTIMONIALS SECTION
-========================= */
+
 
 .testimonials {
   display: flex;
@@ -568,9 +504,7 @@ body {
   padding: 5rem 8%;
 }
 
-/* =========================
-   ARROWS
-========================= */
+
 
 .testimonials__arrow {
   width: 50px;
@@ -591,9 +525,7 @@ body {
   background: #15803d;
 }
 
-/* =========================
-   TESTIMONIAL CARD
-========================= */
+
 
 .testimonial-card {
   max-width: 750px;
@@ -606,9 +538,7 @@ body {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
 }
 
-/* =========================
-   TITLE
-========================= */
+
 
 .testimonial-card__title {
   margin-bottom: 1rem;
@@ -621,9 +551,6 @@ body {
   line-height: 1.3;
 }
 
-/* =========================
-   DESCRIPTION
-========================= */
 
 .testimonial-card__text {
   margin-bottom: 2rem;
@@ -634,9 +561,7 @@ body {
   line-height: 1.8;
 }
 
-/* =========================
-   PROFILE
-========================= */
+
 
 .testimonial-profile {
   display: flex;
@@ -644,9 +569,6 @@ body {
   gap: 1rem;
 }
 
-/* =========================
-   PROFILE IMAGE
-========================= */
 
 .testimonial-profile__image {
   width: 65px;
@@ -657,9 +579,6 @@ body {
   border-radius: 50%;
 }
 
-/* =========================
-   PROFILE INFO
-========================= */
 
 .testimonial-profile__name {
   color: #111827;
@@ -698,9 +617,7 @@ body {
   background: #15803d;
 }
 
-/* =========================
-   RESPONSIVE
-========================== */
+
 
 @media (max-width: 860px) {
   .hero {
