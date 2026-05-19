@@ -1,53 +1,230 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, rgba(53, 108, 255, 0.12), transparent 36%),
+    radial-gradient(circle at bottom right, rgba(72, 212, 122, 0.14), transparent 28%),
+    #f7f8fc;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #1f2937;
 }
 
-.container{
+.page-wrapper {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 28px 24px 40px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  padding: 14px 0;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #0f172a;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 18px;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #475569;
+  font-weight: 500;
+  transition: color 180ms ease;
+}
+
+.navigation a:hover {
+  color: #0f172a;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.95rem 1.8rem;
+  border-radius: 999px;
+  color: white;
+  border: 1px solid transparent;
+  font-weight: 600;
+  transition: transform 180ms ease, background-color 180ms ease, color 180ms ease;
+}
+
+
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background-color: green;
+  color: white;
+}
+
+.button-primary:hover {
+  background-color: #055a05;
+}
+
+.button-secondary {
+  background-color: rgba(15, 23, 42, 0.06);
+  color: white;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: center;
+  padding: 36px 0 16px;
+}
+
+.eyebrow {
+  margin-bottom: 18px;
+  display: inline-block;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.8rem, 4vw, 4.4rem);
+  line-height: 1.05;
+  max-width: 13ch;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+.hero-text {
+  max-width: 35rem;
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #475569;
+  margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.hero-visual img {
+  width: 100%;
+  max-width: 520px;
+  object-fit: cover;
+}
+
+@media (max-width: 860px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-copy h1 {
+    max-width: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-wrapper {
+    padding: 22px 16px 28px;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navigation {
     width: 100%;
-    margin: 0 auto;
-    height: 100vh;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: flex-start;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navigation a.button {
+    width: 100%;
+    text-align: center;
+    
+  }
 }
 
-.header{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+
+/* Additional styles for the features section */
+.features {
+  padding: 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.features-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0f172a;
+ 
 }
 
-.logo{
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+.features-title h2 {
+   margin-bottom: 18px;
+  display: inline-block;
+  color: green;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.82rem;
+  font-weight: 700;
 }
 
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+.features-title p{
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+.features-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
 }
 
-.menu a{
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
+.feature-list img{
+  width: 100%;
+  max-width: 420px;
+  object-fit: cover;
 }
 
-.menu #open{
-    padding: 10px 20px;
-    background-color: green;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
+.feature-desc{
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #475569;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 80px;
+}
+
+.feature-desc h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0f172a;
 }

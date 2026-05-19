@@ -1,24 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="script.js"> </script>
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h2 class="logo">BANKIST</h2>
-            <div class="menu">
-                <a href="#">Features</a>
-                <a href="#">Operations</a>
-                <a href="#">Testimonials</a>
-                <a href="#" id="open">Open Account</a>
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BANKIST | Modern Banking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="site-header">
+        <a class="logo" href="#">BANKIST</a>
+        <nav class="navigation">
+          <a href="#features">Features</a>
+          <a href="#operations">Operations</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#open" class="button button-primary">Open Account</a>
+        </nav>
+      </header>
+
+      <main class="hero">
+        <section class="hero-copy">
+          <p class="eyebrow">Your money, smarter.</p>
+          <h1>Banking built for the modern minimalist.</h1>
+          <p class="hero-text">Open an account today and start managing your finances with intuitive tools, secure transfers, and a clean design made for every device.</p>
+          <div class="hero-actions">
+            <a href="#open" class="button button-primary">Open Account</a>
+            <a href="#learn-more" class="button button-secondary">Learn More</a>
+          </div>
+        </section>
+
+        <section class="hero-visual">
+          <img src="./asstes/bank_img.png" alt="Banking illustration" />
+        </section>
+      </main>
+
+      <main class="features"> 
+        <section class="features-title" id="features">
+          <h2>Features</h2>
+          <p>Discover the powerful features that make BANKIST the best choice for modern banking.</p>
+        </section>
+        <section class="features-content">
+          <div class="feature-list">
+            <img src="./asstes/features.png" alt="Feature 1" />
+          </div>
+          <div class="feature-desc">
+            <h3>Intuitive Dashboard</h3>
+            <p>Get a clear overview of your finances with our user-friendly dashboard. Track your spending, set budgets, and manage your accounts all in one place.</p>
+          </div>
+        </section>
+      </main>
     </div>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
