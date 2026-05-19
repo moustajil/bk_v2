@@ -400,14 +400,38 @@ body {
 
 .operations h2 {
   margin-bottom: var(--space-xl);
-
   color: var(--color-primary-dark);
-
   font-size: var(--fs-heading-lg);
   font-weight: var(--fw-extrabold);
 }
 
+.operation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.operation-list .operation-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+}
+
+.operation-item img {
+  width: 150px;
+  filter: drop-shadow(0 6px 16px rgba(21, 128, 61, 0.2));
+}
+
+.operation-item h3 {
+  color: var(--color-primary);
+  font-size: var(--fs-heading-sm);
+}
+
+.operation-item p {
+  color: var(--color-text-light);
+  font-size: var(--fs-body);
+  line-height: 1.8;
+}
 
 
 /* =========================
