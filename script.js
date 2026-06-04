@@ -28,7 +28,7 @@ const h1 = document.querySelector("h1")
 // tabs
 const tabs = document.querySelectorAll(".tap")
 // Tab Container
-const tabContainer = document.querySelectorAll(".content")
+const tabContainers = document.querySelectorAll(".content");
 // tab content
 const tabContent = document.querySelector(".content-desc")
 
@@ -45,3 +45,9 @@ navigation.addEventListener("click", function (e) {
   }
 });
 
+tabContainers.forEach(container => {
+  container.addEventListener("click", function (e) {
+    console.log(e.target);
+  });
+});
+ 
